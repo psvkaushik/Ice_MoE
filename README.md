@@ -1,6 +1,6 @@
-# SeaIce-MoE
+# Ice-MoE
 
-### Modality-Aware Mixture-of-Experts for Arctic Sea Ice Mapping
+### Towards Auto Sea-Ice Charting Using Multi-Modal Data Fusion and Mixture of Experts
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.7+-red.svg)
@@ -233,7 +233,7 @@ We are working on a standalone evaluate script, but do contact us if you want to
 
 ```bibtex
 @article{kp_rv_2026seaicemoe,
-  title   = {SeaIce-MoE: Modality-Aware Mixture-of-Experts for Arctic Sea Ice Mapping},
+  title   = {Towards Auto Sea-Ice Charting Using Multi-Modal Data Fusion},
   author  = {Pillalamarri and Vatsavai},
   conference = {TODO},
   year    = {2026}
