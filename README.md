@@ -163,9 +163,9 @@ The model checkpoints and the generated charts are stored in `src/log_dir`
 
 > ᵠ Our model.
 ### Qualitative
-
+An example of our model's performance on the SOD task.
 <p align="center">
-  <img src="assets/results.png" width="860">
+  <img src="assets/images/sod_result.png" width="860">
 </p>
 
 <!-- ---
