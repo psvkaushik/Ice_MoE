@@ -26,7 +26,7 @@ SeaIce-MoE moves beyond conventional U-Net approaches that treat all sensor inpu
 
 ---
 
-<!-- ## Key Contributions
+ ## Key Contributions
 
 **Sensor-specific expert encoders** — each satellite modality (SAR, PMW, ENV, AUX) passes through its own dedicated encoder, preserving modality-specific characteristics rather than collapsing all inputs early.
 
@@ -34,7 +34,7 @@ SeaIce-MoE moves beyond conventional U-Net approaches that treat all sensor inpu
 
 **Decoder-level task interactions** — task-specific decoders exchange information through controlled feature-sharing mechanisms, improving prediction consistency across sea ice variables.
 
---- -->
+
 
 ## Architecture
 The overview of the full model : 
@@ -50,43 +50,13 @@ A closer look at the encoder
 </p>
 
 
----
-<!-- 
-## Repository Structure
 
-```
-SeaIce-MoE/
-├── configs/
-│   ├── model/
-│   ├── training/
-│   └── dataset/
-├── datasets/
-│   ├── loaders/
-│   ├── transforms/
-│   └── preprocessing/
-├── models/
-│   ├── encoders/
-│   ├── decoders/
-│   ├── fusion/
-│   ├── moe/
-│   └── losses/
-├── training/
-├── evaluation/
-├── scripts/
-├── checkpoints/
-├── assets/
-├── train.py
-├── evaluate.py
-└── predict.py
-```
-
---- -->
 
 ## Installation
 
 ```bash
-git clone https://github.com/psvkaushik/SeaIce-MoE.git
-cd Sea_Ice_MoE
+git clone https://github.com/psvkaushik/Ice-MoE.git
+cd Ice_MoE
 
 conda create -n seaice python=3.11
 conda activate seaice-moe
@@ -119,12 +89,12 @@ data/
 
 ---
 
-## Training and Evaluation
+## Training
 
 **Single GPU**
 
 ```bash
-python train_cl.py config_cl.py --wandb-project "PROJECTNAME" --work-dir /path_to/src/log_dir --seed 42
+python train.py config.py --wandb-project "PROJECTNAME" --work-dir /path_to/src/log_dir --seed 42
 ```
 
 
@@ -168,55 +138,9 @@ An example of our model's performance on the SOD task.
   <img src="assets/images/sod_result.png" width="860">
 </p>
 
-<!-- ---
-
-## Ablation Studies
-
-### Modality-specific encoders
-
-| Configuration   | Score |
-|-----------------|-------|
-| Shared encoder  | —     |
-| Expert encoders | —     |
-
-### Fusion strategy
-
-| Configuration    | Score |
-|------------------|-------|
-| Concatenation    | —     |
-| Attention fusion | —     |
-| MoE fusion       | —     |
-
-### Decoder interactions
-
-| Configuration        | Score |
-|----------------------|-------|
-| Independent decoders | —     |
-| Decoder interactions | —     |
-
----
-
-## Model Zoo
-
-| Model            | Description | Download |
-|------------------|-------------|----------|
-| SeaIce-MoE Base  | —           | —        |
-| SeaIce-MoE Large | —           | —        | -->
-
----
 
 ## Reproducing Paper Results
 
-<!-- ```bash
-# Train
-python train.py \
-    --config configs/paper/main.yaml
-
-# Evaluate
-python evaluate.py \
-    --config configs/paper/main.yaml \
-    --checkpoint checkpoints/paper.ckpt -->
-<!-- ``` -->
 We are working on a standalone evaluate script, but do contact us if you want to use our weights!
 ---
 
